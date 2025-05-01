@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-image: url(https://i.pinimg.com/736x/05/1f/6d/051f6d0dbfc3ef58a836b5e77c89a41e.jpg);
+            background-size: cover;
+        }
+        form {
+            background-color: #d4edff;
+            padding: 20px;
+            display: inline-block;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 10px;
+            width: calc(100% - 40px);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            width: auto;
+            padding: 10px 20px;
+            border: none;
+            background-color: #fff7b3;
+            color: #000000;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #daffc0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Caesar Cipher Tool</h1>
+    <form action="201902014_cipher.php" method="POST">
+        <label for="text">Enter Text:</label><br>
+        <input type="text" id="text" name="text" required><br>
+        
+        <label for="shift">Shift Value (1-25):</label><br>
+        <input type="number" id="shift" name="shift" min="1" max="25" required><br>
+        
+        <label for="operation">Operation:</label><br>
+        <select id="operation" name="operation" required>
+            <option value="encode">Encode</option>
+            <option value="decode">Decode</option>
+        </select><br>
+        
+        <button type="submit">Process</button>
+    </form>
+</body>
+</html>

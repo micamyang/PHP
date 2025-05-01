@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Serif:ital,wght@1,300;1,500&family=Nanum+Myeongjo&display=swap');
+  
+body{
+    background-image: url(https://i.pinimg.com/originals/2f/8f/9e/2f8f9e2441b435e72232afe80b4ec8e0.gif);
+    background-size: cover;
+}
+
+header{
+    background-color: rgb(218, 236, 253);
+    text-align: center;
+    font-family: 'Abril Fatface';
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-bottom: 5px;
+}
+#seoul{
+    text-align: center;
+    font-family: 'Abril Fatface';
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: -3%;
+    color: rgb(4, 1, 57);
+}
+#pHeader{
+    text-align: center;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-style: italic
+}
+
+.navigation{ /* navigation bar sticky */
+    position: sticky;
+    top: 0;
+    padding: 5px;
+}
+
+ul.nav{ /* nav bar */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+li.nav{
+    float: left;
+}
+li.nav a{
+    display: block;
+    color: cornflowerblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.nav a:hover:not(.active){
+    background-color: azure;
+}
+.active{
+    background-color: cornsilk;
+    color: black;
+}
+
+.dropbtn{ /* nav bar dropdown btn */
+    background-color: cornflowerblue;
+    color: aliceblue;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #2b92f9;
+    color: white;
+}
+.dropdown:hover .dropbtn {
+    background-color: #7149ff;
+}
+
+
+#history{
+    background-color: antiquewhite;
+}
+
+hr{
+    border-style: dashed;
+    border-width: 7px;
+    border-color: aliceblue;
+    border-top: 0px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+section{
+    background-color: rgb(248, 253, 255);
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-bottom: 3%;
+}
+
+.title{
+    font-family: 'Abril Fatface';
+    padding-left: 2%;
+    padding-top: 1%;
+    color: rgb(5, 5, 65);
+}
+
+table{ /* attraction table */
+    border: 5px double;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    border-color: rgb(102, 102, 235);
+}
+th, td{
+    font-family: "IBM Plex Serif", serif;
+    border: 3px solid;
+    border-collapse: collapse;
+    border-color: rgb(181, 181, 235);
+    background-color: rgb(230, 249, 253);
+}
+th{
+    height: 200px;
+    background-color: aliceblue;
+}
+td{
+    text-align: center;
+    font-size: 15px;
+    padding: 1%;
+}
+#attraction{
+    background-color: azure;
+}
+img{
+    border: dashed;
+    border-color: rgb(141, 190, 234);
+}
+.attractionName{
+    height: 30px;
+    font-weight: bolder;
+    font-size: 17px;
+    background-color: rgb(193, 212, 253);
+    color: rgb(49, 49, 99);
+}
+#typeOfAttraction{
+    font-weight: bold;
+}
+#attractionHashtag{
+    font-style: italic;
+    font-size: 10px;
+    color: rgb(10, 10, 187);
+}
+
+a:link {
+    font-family: "IBM Plex Serif", serif;
+    color: rgb(49, 49, 99);
+    text-decoration: none;
+}
+a:visited{
+    font-family: "IBM Plex Serif", serif;
+    color: rgb(134, 134, 237);
+}
+a:hover{
+    font-family: "IBM Plex Serif", serif;
+    background-color: rgb(152, 175, 252);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+a:active{
+    font-family: "IBM Plex Serif", serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(187, 122, 248);
+    text-decoration: overline;
+}
+
+h3{
+    font-family: 'Abril Fatface';
+    font-weight: lighter;
+}
+
+section{
+    overflow: hidden; /* overflow hidden */
+    margin-bottom: 5%;
+}
+
+.localFood{
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 17px;
+    margin-left: 0%;
+    margin-right: 3%;
+    padding-bottom: 1%;
+}
+
+.img-container{ /* image float */
+    float: left;
+    width: 49%;
+    padding: 5px;
+    overflow: auto;
+}
+.Bindaetteok{
+    clear: both;
+    position: relative;
+}
+
+li.funfact{
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+h3.funfact{
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: bold;
+}
+p.funfact{
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-right: 4%;
+}
+
+p.description{
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.youtube{
+    text-align: center;
+    font-family: 'Abril Fatface';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#contact{
+    background-image: url(https://i.pinimg.com/enabled_lo/564x/1f/9b/f3/1f9bf34b89e1a21a983e209f37ab6ae5.jpg);
+    background-size: cover;
+    border: dotted;
+    border-color: pink;
+    
+    /* different margin */
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+    margin-right: 2%;
+
+}
+
+form{
+    text-align: center;
+    font-family: 'Abril Fatface';
+    font-size: 25px;
+    padding: 10%;
+}
+
+footer{
+    color: white;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+a#footer{
+    color: rgb(230, 221, 245);
+    font-family: "IBM Plex Serif", serif;
+    font-size: 13px;
+    text-align: center;
+}

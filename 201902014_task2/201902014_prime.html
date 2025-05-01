@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-image: url(https://i.pinimg.com/736x/e9/1e/17/e91e175e70801bfe2b86cb172e996806.jpg);
+        }
+        form {
+            background-color: #f9dcef;
+            padding: 20px;
+            display: inline-block;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: calc(100% - 40px);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff029e;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #7e0909;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prime Numbers Finder</h1>
+    <form action="201902014_prime.php" method="POST">
+        <label for="start">Start Range:</label><br>
+        <input type="number" id="start" name="start" required><br>
+        <label for="end">End Range:</label><br>
+        <input type="number" id="end" name="end" required><br>
+        <button type="submit">Find Primes</button>
+    </form>
+</body>
+</html>
